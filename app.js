@@ -17,7 +17,7 @@ let cart = JSON.parse(localStorage.getItem('luxe_cart') || '[]');
 fetch('products.json?v=%VERSION%').then(r => r.json()).then(products => {
   grid.innerHTML = products.map(p => `
     <article class="card">
-      <img loading="lazy" src="${p.image}" alt="${p.name}" />
+      <img loading="lazy" src="${p.image}" alt="${p.name}" onerror="this.onerror=null;this.src='assets/fallback.svg';" />
       <div class="content">
         <h4>${p.name}</h4>
         <div class="price">

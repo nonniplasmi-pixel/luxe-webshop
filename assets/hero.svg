@@ -11,10 +11,6 @@
   </defs>
   <rect width="1440" height="640" fill="url(#bg)"/>
   <circle cx="1080" cy="160" r="360" fill="url(#burst)"/>
-  <text x="120" y="200" font-family="Inter, Helvetica, Arial, sans-serif" font-size="56" font-weight="800" fill="#0f0f10">
-    Luxe vefverslun
-  </text>
-  <text x="120" y="260" font-family="Inter, Helvetica, Arial, sans-serif" font-size="24" fill="#5b5b66">
-    Fallegar augnhár & augabrúnir – ISK verð
-  </text>
+  <text x="120" y="200" font-family="Inter, Helvetica, Arial, sans-serif" font-size="56" font-weight="800" fill="#0f0f10">Luxe vefverslun</text>
+  <text x="120" y="260" font-family="Inter, Helvetica, Arial, sans-serif" font-size="24" fill="#5b5b66">Fallegar augnhár & augabrúnir – ISK verð</text>
 </svg>

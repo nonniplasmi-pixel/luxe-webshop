@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="800" viewBox="0 0 1080 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2ffd6"/>
+      <stop offset="1" stop-color="#fff1f6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="800" fill="url(#bg)"/>
+  <rect x="60" y="60" width="960" height="680" rx="24" fill="#ffffff" opacity="0.9"/>
+  <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-weight="800" font-size="48" fill="#0f0f10">Luxe Eyelash Shampoo</text>
+  <text x="50%" y="60%" dominant-baseline="middle" text-anchor="middle"
+        font-family="Inter, Helvetica, Arial, sans-serif" font-size="20" fill="#6b7280">Luxe</text>
+</svg>

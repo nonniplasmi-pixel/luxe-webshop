@@ -14,7 +14,7 @@ const FREE_SHIPPING_THRESHOLD = 7500; // kr.
 
 let cart = JSON.parse(localStorage.getItem('luxe_cart') || '[]');
 
-fetch('products.json').then(r => r.json()).then(products => {
+fetch('products.json?v=%VERSION%').then(r => r.json()).then(products => {
   grid.innerHTML = products.map(p => `
     <article class="card">
       <img loading="lazy" src="${p.image}" alt="${p.name}" />

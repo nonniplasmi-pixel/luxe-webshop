@@ -1,74 +1,74 @@
 [
   {
     "id": "lashlift-set",
-    "name": "Luxe Lashlift Set (+ Free Tint Set)",
-    "price": 39.95,
-    "compare_at_price": 69.95,
-    "image": "https://tryluxe.com/cdn/shop/files/Progetto_senza_titolo_94_1080x.jpg?v=1739986575",
-    "product_url": "https://tryluxe.com/products/luxe-lashlift-set-free-tint-set"
+    "name": "Luxe Lashlift Set (+ Frítt Tint Set)",
+    "price_isk": 6990,
+    "compare_isk": 8990,
+    "image": "assets/hero.svg",
+    "url": "https://tryluxe.com/products/luxe-lashlift-set-free-tint-set"
   },
   {
     "id": "tint-set",
     "name": "Luxe Tint Set",
-    "price": 19.95,
-    "compare_at_price": 29.95,
+    "price_isk": 3490,
+    "compare_isk": 3990,
     "image": "https://tryluxe.com/cdn/shop/files/luxe-tint-set_optimized_cb580f4e-7f05-4d3c-9180-4e5a060bf439_1080x.jpg?v=1728277760",
-    "product_url": "https://tryluxe.com/products/lash-brow-tint-kit"
+    "url": "https://tryluxe.com/products/lash-brow-tint-kit"
   },
   {
     "id": "eyelash-serum",
     "name": "Luxe Eyelash Growth Serum",
-    "price": 29.95,
-    "compare_at_price": 49.95,
+    "price_isk": 4990,
+    "compare_isk": 5990,
     "image": "https://tryluxe.com/cdn/shop/files/LUXE_EYELASH_SERUM_03_LIGHT_PINK_TRANSPARENT_a52491c6-3c49-4819-bbfc-b083661ba3df_780x.png?v=1686066027",
-    "product_url": "https://tryluxe.com/products/eyelash-growth-serum"
+    "url": "https://tryluxe.com/products/eyelash-growth-serum"
   },
   {
     "id": "eyebrow-serum",
     "name": "Luxe Eyebrow Growth Serum",
-    "price": 29.95,
-    "compare_at_price": 49.95,
+    "price_isk": 4990,
+    "compare_isk": 5990,
     "image": "https://tryluxe.com/cdn/shop/files/5_547ce1cc-918e-4fad-bafe-1c78529bc0ba_1080x.png?v=1731607002",
-    "product_url": "https://tryluxe.com/products/eyebrow-growth-serum"
+    "url": "https://tryluxe.com/products/eyebrow-growth-serum"
   },
   {
     "id": "brow-lamination",
     "name": "Luxe Brow Lamination Kit",
-    "price": 34.95,
-    "compare_at_price": 59.95,
+    "price_isk": 5990,
+    "compare_isk": 6990,
     "image": "https://tryluxe.com/cdn/shop/files/EYEBROWLIFTSETIMAGEEDIT_1080x.jpg?v=1698230826",
-    "product_url": "https://tryluxe.com/products/eyebrow-lamination-kit"
+    "url": "https://tryluxe.com/products/eyebrow-lamination-kit"
   },
   {
     "id": "lash-shampoo",
     "name": "Luxe Eyelash Shampoo",
-    "price": 19.95,
-    "compare_at_price": 29.95,
+    "price_isk": 2990,
+    "compare_isk": 3490,
     "image": "https://tryluxe.com/cdn/shop/files/4_cdb59a22-0d50-4a3f-a2e0-e17187721d6f_1080x.png?v=1731606896",
-    "product_url": "https://tryluxe.com/products/lash-shampoo"
+    "url": "https://tryluxe.com/products/lash-shampoo"
   },
   {
     "id": "cleanser",
     "name": "Luxe Cleanser",
-    "price": 19.95,
-    "compare_at_price": 24.95,
+    "price_isk": 2990,
+    "compare_isk": 3490,
     "image": "https://tryluxe.com/cdn/shop/files/7_346daa71-397b-4ca9-8105-f025735e82e4_1080x.png?v=1731607331",
-    "product_url": "https://tryluxe.com/products/lash-cleanser"
+    "url": "https://tryluxe.com/products/lash-cleanser"
   },
   {
     "id": "sachet-refill",
     "name": "Luxe Sachet – Refill",
-    "price": 19.95,
-    "compare_at_price": 24.95,
+    "price_isk": 2490,
+    "compare_isk": 2990,
     "image": "https://tryluxe.com/cdn/shop/files/2_5149b886-4edc-41ef-8ba9-c86c5eac1139_1080x.png?v=1731606729",
-    "product_url": "https://tryluxe.com/products/eyelash-lift-sachet-refill"
+    "url": "https://tryluxe.com/products/eyelash-lift-sachet-refill"
   },
   {
     "id": "applicators",
     "name": "Luxe Applicators",
-    "price": 14.95,
-    "compare_at_price": 19.95,
+    "price_isk": 1990,
+    "compare_isk": 2490,
     "image": "https://tryluxe.com/cdn/shop/files/LUXE_APPLICATORS_1_1080x.jpg?v=1694596351",
-    "product_url": "https://tryluxe.com/products/lash-lift-tool-applicators"
+    "url": "https://tryluxe.com/products/lash-lift-tool-applicators"
   }
 ]

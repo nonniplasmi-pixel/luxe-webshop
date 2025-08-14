@@ -3,25 +3,27 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Luxe – Vefverslun</title>
+  <title>Luxe – Vefverslun (ISK)</title>
+  <meta name="description" content="Íslensk vefverslun fyrir Luxe með verðum í ISK.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/luxe-logo.svg">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="header">
     <div class="container header-inner">
       <div class="brand">
-        <img src="https://tryluxe.com/cdn/shop/files/LC_Logo_black.png?v=1707376703" alt="Luxe" class="logo">
+        <img src="assets/luxe-logo.svg" alt="Luxe" class="logo">
         <div>
           <h1>Luxe</h1>
-          <p class="tagline">Fallegar augnhár & augabrúnir, án fyrirhafnar</p>
+          <p class="tagline">Augnhár & augabrúnir – ISK verð</p>
         </div>
       </div>
       <nav class="nav">
         <a href="#products">Vörur</a>
-        <a href="#um">Um okkur</a>
+        <a href="#um">Um</a>
         <button id="cartBtn" class="cart-btn" aria-label="Opna körfu">🛒 <span id="cartCount">0</span></button>
       </nav>
     </div>
@@ -30,11 +32,13 @@
   <main class="container">
     <section id="hero" class="hero">
       <div class="hero-text">
-        <h2>Vefverslun Luxe á íslensku</h2>
-        <p>Hágæða sett fyrir lash lift, brow lamination, nærandi serum og hreinsar – sendum frítt.</p>
+        <h2>Luxe vefverslun á íslensku</h2>
+        <p>Hágæða lash lift & brow lamination sett, nærandi serum og umhirðu-vörur. Sýndarverð í krónu (ISK) og einföld karfa.</p>
         <a href="#products" class="btn-primary">Skoða vörur</a>
       </div>
-      <div class="hero-art" role="img" aria-label="Luxe vörur"></div>
+      <div class="hero-art">
+        <img src="assets/hero.svg" alt="Luxe vörur">
+      </div>
     </section>
 
     <section id="products" class="products">
@@ -45,19 +49,19 @@
     <section id="um" class="about">
       <h3>Af hverju Luxe?</h3>
       <ul>
-        <li>✔ Dermatólógískt prófað, 100% vegan & cruelty‑free</li>
-        <li>✔ Fljótleg notkun – niðurstaða í allt að 8 vikur</li>
+        <li>✔ Vegan & cruelty‑free</li>
+        <li>✔ Fljótleg notkun – falleg niðurstaða</li>
         <li>✔ 30 daga skilatrygging</li>
       </ul>
       <p class="legal">
-        Myndir og vörulýsingar eru fengnar af opinberri heimasíðu Luxe (<a href="https://www.tryluxe.com" target="_blank" rel="noopener">tryluxe.com</a>).
+        Myndir & vörulýsingar vísa á opinberar vörusíður Luxe (<a href="https://www.tryluxe.com" target="_blank" rel="noopener">tryluxe.com</a>).
       </p>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <small>© Luxe Cosmetics – Óopinber íslensk kynningarsíða.</small>
+      <small>© Luxe – íslensk demo síða. Verð eru í ISK.</small>
     </div>
   </footer>
 
@@ -71,10 +75,10 @@
     <div class="drawer-footer">
       <div class="totals">
         <span>Samtals:</span>
-        <strong id="cartTotal">$0.00</strong>
+        <strong id="cartTotal">0 kr.</strong>
       </div>
       <button id="checkoutBtn" class="btn-primary btn-full">Ganga frá pöntun</button>
-      <p class="muted">Ath: Þetta er einfaldað sýnidæmi. „Kaupa“ opnar tengil á upprunalegu vöru hjá Luxe.</p>
+      <p class="muted">Ath: Þetta er static sýnaflæði – „Kaupa“ opnar upprunalega vöru hjá Luxe.</p>
     </div>
   </aside>
 

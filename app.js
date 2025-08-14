@@ -7,8 +7,10 @@ const cartItems = document.getElementById('cartItems');
 const cartTotal = document.getElementById('cartTotal');
 const cartCount = document.getElementById('cartCount');
 const checkoutBtn = document.getElementById('checkoutBtn');
+const shippingHint = document.getElementById('shippingHint');
 
 const ISK = new Intl.NumberFormat('is-IS', { style: 'currency', currency: 'ISK', maximumFractionDigits: 0 });
+const FREE_SHIPPING_THRESHOLD = 7500; // kr.
 
 let cart = JSON.parse(localStorage.getItem('luxe_cart') || '[]');
 
@@ -84,6 +86,15 @@ function renderCart() {
   const total = cart.reduce((s, x) => s + x.price_isk * x.qty, 0);
   cartTotal.textContent = ISK.format(total);
   cartCount.textContent = cart.reduce((s, x) => s + x.qty, 0);
+
+  if (shippingHint) {
+    if (total >= FREE_SHIPPING_THRESHOLD) {
+      shippingHint.textContent = '✅ Frí sending!';
+    } else {
+      const diff = FREE_SHIPPING_THRESHOLD - total;
+      shippingHint.textContent = `Bætir ${ISK.format(diff)} í körfu til að fá fría sendingu.`;
+    }
+  }
 }
 
 cartBtn.addEventListener('click', () => cartDrawer.classList.toggle('open'));

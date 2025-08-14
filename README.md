@@ -1,20 +1,17 @@
-# Luxe Webshop (ISK) – með frísendingarborða & SEO
+# Luxe Webshop (ISK) – Full Fix
 
-- Verð í ISK, falleg birting (`Intl.NumberFormat('is-IS')`)
-- Toppborði: **Frí sending yfir 7.500 kr.**
-- Karfa: sýnir hversu mikið vantar upp á fría sendingu
-- SEO/OG/Twitter meta + favicon.svg
-- GitHub Pages workflow (deploy á push)
+- Allar myndir eru **staðbundnar** í `assets/` (engin hotlink)
+- **Cache-bust** með `%VERSION%` → GitHub Actions setur stutta commit-hash
+- „Um Luxe“ með portretti, quote, Blondie, korti & CTA
+- ISK verð, frí sending yfir 7.500 kr., myndaföll til varasýningar
 
 ## Uppsetning
-Hladdu upp **innihaldi** þessarar ZIP í rót repo-sins (`luxe-webshop`) og commit-aðu.  
-Farðu í **Settings → Pages → Build and deployment → GitHub Actions** ef það er ekki þegar virkt.
+1) Hladdu **innihaldi** ZIP í rót repo-sins (`luxe-webshop`) og `Commit changes`.
+2) Fylgstu með **Actions** → “Pages build and deployment”.
+3) Opna: `https://<user>.github.io/luxe-webshop/?v=fullfix`.
 
 ## Breyta frísendingarmörkum
-Opna `app.js` og breyta `FREE_SHIPPING_THRESHOLD` (í krónum).
+`app.js` → `FREE_SHIPPING_THRESHOLD`.
 
-## Keyra staðbundið
-```bash
-python -m http.server 8080
-# Svo: http://localhost:8080
-```
+## Bæta við raunverulegum vörumyndum
+Settu JPG/PNG í `assets/` og uppfærðu `image` slóðir í `products.json`.

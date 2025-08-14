@@ -69,7 +69,7 @@ function persist() {
 function renderCart() {
   cartItems.innerHTML = cart.length ? cart.map(item => `
     <div class="cart-item">
-      <img src="${item.image}" alt="${item.name}" />
+      <img src="${item.image}" alt="${item.name}" onerror="this.onerror=null;this.src='assets/fallback.svg';" />
       <div>
         <div><strong>${item.name}</strong></div>
         <div class="qty">

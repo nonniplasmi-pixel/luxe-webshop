@@ -4,7 +4,7 @@
     "name": "Luxe Lashlift Set (+ Frítt Tint Set)",
     "price_isk": 6990,
     "compare_isk": 8990,
-    "image": "assets/lashlift-set.svg",
+    "image": "assets/hero.svg",
     "url": "https://tryluxe.com/products/luxe-lashlift-set-free-tint-set"
   },
   {
@@ -12,7 +12,7 @@
     "name": "Luxe Tint Set",
     "price_isk": 3490,
     "compare_isk": 3990,
-    "image": "assets/tint-set.svg",
+    "image": "https://tryluxe.com/cdn/shop/files/luxe-tint-set_optimized_cb580f4e-7f05-4d3c-9180-4e5a060bf439_1080x.jpg?v=1728277760",
     "url": "https://tryluxe.com/products/lash-brow-tint-kit"
   },
   {
@@ -20,7 +20,7 @@
     "name": "Luxe Eyelash Growth Serum",
     "price_isk": 4990,
     "compare_isk": 5990,
-    "image": "assets/eyelash-serum.svg",
+    "image": "https://tryluxe.com/cdn/shop/files/LUXE_EYELASH_SERUM_03_LIGHT_PINK_TRANSPARENT_a52491c6-3c49-4819-bbfc-b083661ba3df_780x.png?v=1686066027",
     "url": "https://tryluxe.com/products/eyelash-growth-serum"
   },
   {
@@ -28,7 +28,7 @@
     "name": "Luxe Eyebrow Growth Serum",
     "price_isk": 4990,
     "compare_isk": 5990,
-    "image": "assets/eyebrow-serum.svg",
+    "image": "https://tryluxe.com/cdn/shop/files/5_547ce1cc-918e-4fad-bafe-1c78529bc0ba_1080x.png?v=1731607002",
     "url": "https://tryluxe.com/products/eyebrow-growth-serum"
   },
   {
@@ -36,7 +36,7 @@
     "name": "Luxe Brow Lamination Kit",
     "price_isk": 5990,
     "compare_isk": 6990,
-    "image": "assets/brow-lamination.svg",
+    "image": "https://tryluxe.com/cdn/shop/files/EYEBROWLIFTSETIMAGEEDIT_1080x.jpg?v=1698230826",
     "url": "https://tryluxe.com/products/eyebrow-lamination-kit"
   },
   {
@@ -44,7 +44,7 @@
     "name": "Luxe Eyelash Shampoo",
     "price_isk": 2990,
     "compare_isk": 3490,
-    "image": "assets/lash-shampoo.svg",
+    "image": "https://tryluxe.com/cdn/shop/files/4_cdb59a22-0d50-4a3f-a2e0-e17187721d6f_1080x.png?v=1731606896",
     "url": "https://tryluxe.com/products/lash-shampoo"
   },
   {
@@ -52,7 +52,7 @@
     "name": "Luxe Cleanser",
     "price_isk": 2990,
     "compare_isk": 3490,
-    "image": "assets/cleanser.svg",
+    "image": "https://tryluxe.com/cdn/shop/files/7_346daa71-397b-4ca9-8105-f025735e82e4_1080x.png?v=1731607331",
     "url": "https://tryluxe.com/products/lash-cleanser"
   },
   {
@@ -60,7 +60,7 @@
     "name": "Luxe Sachet – Refill",
     "price_isk": 2490,
     "compare_isk": 2990,
-    "image": "assets/sachet-refill.svg",
+    "image": "https://tryluxe.com/cdn/shop/files/2_5149b886-4edc-41ef-8ba9-c86c5eac1139_1080x.png?v=1731606729",
     "url": "https://tryluxe.com/products/eyelash-lift-sachet-refill"
   },
   {
@@ -68,7 +68,7 @@
     "name": "Luxe Applicators",
     "price_isk": 1990,
     "compare_isk": 2490,
-    "image": "assets/applicators.svg",
+    "image": "https://tryluxe.com/cdn/shop/files/LUXE_APPLICATORS_1_1080x.jpg?v=1694596351",
     "url": "https://tryluxe.com/products/lash-lift-tool-applicators"
   }
 ]

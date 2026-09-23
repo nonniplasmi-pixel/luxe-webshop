@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="is">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ráðstöfun – portfolio demo</title>
+  <meta name="description" content="Portfolio demo af radstofun.is – stafrænum lead generation og ráðgjafarvettvangi.">
+  <meta name="robots" content="noindex,nofollow">
+  <style>
+    :root{
+      --ink:#10233f; --muted:#5d6d80; --line:#dbe4ea; --soft:#f4f8fa;
+      --accent:#0d7b78; --accent2:#e8f5f3; --white:#fff; --dark:#0d1b2a;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+    a{color:inherit}
+    .wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    .top{background:var(--dark);color:#fff;font-size:14px}
+    .top .wrap{display:flex;justify-content:space-between;gap:20px;padding:11px 0}
+    .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);padding:5px 10px;border-radius:999px}
+    header{border-bottom:1px solid var(--line);background:rgba(255,255,255,.96);position:sticky;top:0;z-index:10}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{font-weight:800;font-size:22px;letter-spacing:-.02em}
+    .brand span{color:var(--accent)}
+    nav .links{display:flex;gap:22px;font-size:14px;color:var(--muted)}
+    nav a{text-decoration:none}
+    .hero{padding:86px 0 70px;background:linear-gradient(180deg,#fff 0%,#f6fafb 100%)}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:54px;align-items:center}
+    h1{font-size:clamp(44px,6vw,76px);line-height:1.02;letter-spacing:-.055em;margin:0 0 24px}
+    h2{font-size:clamp(30px,4vw,46px);line-height:1.08;letter-spacing:-.035em;margin:0 0 16px}
+    h3{font-size:22px;line-height:1.2;margin:0 0 10px}
+    p{margin:0 0 18px}
+    .lead{font-size:20px;color:var(--muted);max-width:740px}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-block;padding:14px 20px;border-radius:12px;text-decoration:none;font-weight:700;border:1px solid var(--accent)}
+    .btn.primary{background:var(--accent);color:#fff}
+    .btn.secondary{background:#fff;color:var(--accent)}
+    .hero-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 18px 50px rgba(16,35,63,.08)}
+    .hero-card .mini{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-weight:700}
+    .hero-card .big{font-size:44px;font-weight:800;letter-spacing:-.04em;margin:8px 0}
+    .hero-card .row{display:flex;justify-content:space-between;padding:13px 0;border-top:1px solid var(--line);font-size:14px}
+    section{padding:74px 0}
+    .soft{background:var(--soft)}
+    .eyebrow{font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+    .card{border:1px solid var(--line);border-radius:18px;padding:24px;background:#fff}
+    .num{width:36px;height:36px;border-radius:10px;background:var(--accent2);color:var(--accent);display:grid;place-items:center;font-weight:800;margin-bottom:18px}
+    .muted{color:var(--muted)}
+    .calc{display:grid;grid-template-columns:.85fr 1.15fr;gap:26px;margin-top:34px}
+    .panel{border:1px solid var(--line);border-radius:20px;padding:26px;background:#fff}
+    label{display:block;font-weight:700;margin-bottom:8px}
+    input{width:100%;padding:14px 15px;border:1px solid #cdd8df;border-radius:11px;font:inherit;margin-bottom:18px}
+    .result{background:var(--dark);color:#fff;border-radius:18px;padding:28px}
+    .result small{color:#c7d3df}
+    .result .value{font-size:38px;font-weight:800;letter-spacing:-.035em;margin:6px 0 20px}
+    .result-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .result-box{background:rgba(255,255,255,.08);padding:16px;border-radius:12px}
+    .result-box strong{display:block;font-size:20px;margin-top:4px}
+    .flow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:34px}
+    .flow .card{position:relative}
+    .flow .card:not(:last-child):after{content:"→";position:absolute;right:-11px;top:50%;transform:translateY(-50%);font-weight:800;color:var(--accent);z-index:2}
+    .project{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+    .check{margin:0;padding:0;list-style:none}
+    .check li{padding:9px 0 9px 30px;position:relative;border-bottom:1px solid var(--line)}
+    .check li:before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:900}
+    footer{background:var(--dark);color:#d7e0e8;padding:38px 0;font-size:14px}
+    footer strong{color:#fff}
+    @media(max-width:820px){
+      .hero-grid,.calc,.project{grid-template-columns:1fr}
+      .grid3{grid-template-columns:1fr}
+      .flow{grid-template-columns:1fr 1fr}
+      .flow .card:after{display:none}
+      nav .links{display:none}
+      .hero{padding-top:58px}
+    }
+    @media(max-width:520px){
+      .wrap{width:min(100% - 26px,1120px)}
+      .top .wrap{display:block}
+      .top .right{display:none}
+      .flow,.result-grid{grid-template-columns:1fr}
+      h1{font-size:46px}
+    }
+  </style>
+</head>
+<body>
+  <div class="top">
+    <div class="wrap">
+      <span class="badge">Portfolio demo · verkefnið er í hvíld</span>
+      <span class="right">radstofun.is · Ráðstöfun</span>
+    </div>
+  </div>
+
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="brand">Ráð<span>stöfun</span></div>
+        <div class="links">
+          <a href="#verkefnid">Um verkefnið</a>
+          <a href="#reiknivel">Reiknivél</a>
+          <a href="#kerfid">Lead-flow</a>
+          <a href="#launagreidendur">Launagreiðendur</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Stafrænn ráðgjafar- og lead generation vettvangur</div>
+          <h1>Nýtir þú 3,5% heimildina í lífeyrinum þínum?</h1>
+          <p class="lead">Ráðstöfun var byggð til að einfalda fræðslu um tilgreinda séreign, gera fólki kleift að sjá möguleg áhrif í reiknivél og umbreyta áhuga í raunveruleg ráðgjafarleads.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="#reiknivel">Prófa demo reiknivél</a>
+            <a class="btn secondary" href="#verkefnid">Sjá hvernig kerfið virkaði</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="mini">Dæmi · mánaðarlaun</div>
+          <div class="big">850.000 kr.</div>
+          <div class="row"><span>3,5% á mánuði</span><strong>29.750 kr.</strong></div>
+          <div class="row"><span>Lead source</span><strong>radstofun.is</strong></div>
+          <div class="row"><span>Ferli</span><strong>Vefur → ráðgjöf → sala</strong></div>
+          <div class="row"><span>Staða verkefnis</span><strong>Í hvíld</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="verkefnid">
+      <div class="wrap">
+        <div class="eyebrow">Um verkefnið</div>
+        <h2>Ekki bara vefsíða — heldur sölukerfi</h2>
+        <p class="lead">Markmiðið var að byggja skalanlega leið frá fræðslu og stafrænni markaðssetningu yfir í ráðgjöf, eftirfylgni og sölu.</p>
+        <div class="grid3">
+          <div class="card"><div class="num">1</div><h3>Lead generation</h3><p class="muted">Lendingarsíður, herferðir og mælingar á uppruna leads með UTM-gögnum og campaign source.</p></div>
+          <div class="card"><div class="num">2</div><h3>Ráðgjafarflæði</h3><p class="muted">Leads fóru í skipulagt ferli fyrir samband, þarfagreiningu, bókun og eftirfylgni.</p></div>
+          <div class="card"><div class="num">3</div><h3>CRM og sala</h3><p class="muted">Kerfið hélt utan um leads, úthlutun, símtöl, athugasemdir, verkefni og sölutölur.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reiknivel" class="soft">
+      <div class="wrap">
+        <div class="eyebrow">Interactive demo</div>
+        <h2>Reiknivél sem breytti flóknu efni í einfalt næsta skref</h2>
+        <div class="calc">
+          <div class="panel">
+            <label for="salary">Mánaðarlaun</label>
+            <input id="salary" type="number" value="850000" min="0" step="10000">
+            <label for="age">Aldur</label>
+            <input id="age" type="number" value="35" min="18" max="66">
+            <p class="muted" style="font-size:13px">Demo notar 3,5% og 5% árlega ávöxtun til 67 ára, í samræmi við upprunalega kynningarreiknivél. Þetta er ekki fjármálaráðgjöf.</p>
+          </div>
+          <div class="result">
+            <small>3,5% af mánaðarlaunum</small>
+            <div class="value" id="monthly">29.750 kr.</div>
+            <div class="result-grid">
+              <div class="result-box"><small>Á ári</small><strong id="annual">357.000 kr.</strong></div>
+              <div class="result-box"><small>Áætlað til 67 ára*</small><strong id="future">–</strong></div>
+            </div>
+            <p style="margin-top:18px;font-size:12px;color:#b7c6d4">*Einföld kynningarútreikningur með mánaðarlegum greiðslum og 5% árlegri ávöxtun.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kerfid">
+      <div class="wrap">
+        <div class="eyebrow">Söluflæði</div>
+        <h2>Frá auglýsingu að ráðgjöf</h2>
+        <div class="flow">
+          <div class="card"><h3>Auglýsing</h3><p class="muted">Meta / stafræn herferð með mælanlegum campaign source.</p></div>
+          <div class="card"><h3>Lendingarsíða</h3><p class="muted">Fræðsla, reiknivél og skýr CTA til að óska eftir ráðgjöf.</p></div>
+          <div class="card"><h3>Lead + CRM</h3><p class="muted">Gögn skráð, uppruni rakinn og lead úthlutað til eftirfylgni.</p></div>
+          <div class="card"><h3>Ráðgjöf / sala</h3><p class="muted">Símtal, fundur, þarfagreining og næstu skref eftir stöðu viðskiptavinar.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="launagreidendur" class="soft">
+      <div class="wrap project">
+        <div>
+          <div class="eyebrow">B2B þáttur</div>
+          <h2>Launagreiðendur</h2>
+          <p class="lead">Sérstök síða var byggð fyrir fyrirtækjaeigendur og launagreiðendur með það markmið að bóka vinnustaðakynningar fyrir starfsfólk.</p>
+          <p class="muted">Þar var hægt að skrá tengilið, fyrirtæki, síma, netfang, fjölda starfsmanna og áhuga á kynningu. Þannig varð vefurinn bæði B2C og B2B sölutæki.</p>
+        </div>
+        <div class="card">
+          <h3>Helstu þættir sem voru byggðir</h3>
+          <ul class="check">
+            <li>Forsíða fyrir einstaklinga</li>
+            <li>3,5% reiknivél</li>
+            <li>Lead-form og source tracking</li>
+            <li>Launagreiðendasíða fyrir B2B leads</li>
+            <li>Þarfagreining</li>
+            <li>Innskráð CRM virkni</li>
+            <li>Lead assignment og eftirfylgni</li>
+            <li>Sölutölur og verkefnayfirlit</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap project">
+        <div>
+          <div class="eyebrow">Portfolio snapshot</div>
+          <h2>Verkefnið er nú í hvíld</h2>
+          <p class="lead">Þessi síða er óvirk portfolio-sýning á hugmyndinni og virkni radstofun.is. Hún safnar ekki persónuupplýsingum og er ekki virk ráðgjafarþjónusta.</p>
+        </div>
+        <div class="card">
+          <h3>Hvað verkefnið sýnir</h3>
+          <p class="muted">Reynslu af því að sameina sölu, stafræna markaðssetningu, lead generation, vefþróun og ferlahönnun í eitt mælanlegt viðskiptakerfi.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap"><strong>Ráðstöfun / radstofun.is</strong><br>Portfolio demo · verkefnið er í hvíld · engin virk söfnun persónuupplýsinga.</div>
+  </footer>
+
+  <script>
+    const salary = document.getElementById('salary');
+    const age = document.getElementById('age');
+    const monthlyEl = document.getElementById('monthly');
+    const annualEl = document.getElementById('annual');
+    const futureEl = document.getElementById('future');
+    const fmt = n => Math.round(n).toLocaleString('is-IS') + ' kr.';
+    function update(){
+      const s = Math.max(0, Number(salary.value)||0);
+      const a = Math.min(66, Math.max(18, Number(age.value)||18));
+      const m = s * 0.035;
+      const years = Math.max(0, 67-a);
+      const months = years*12;
+      const r = Math.pow(1.05,1/12)-1;
+      const fv = r > 0 ? m*((Math.pow(1+r,months)-1)/r) : m*months;
+      monthlyEl.textContent = fmt(m);
+      annualEl.textContent = fmt(m*12);
+      futureEl.textContent = fmt(fv);
+    }
+    salary.addEventListener('input',update);
+    age.addEventListener('input',update);
+    update();
+  </script>
+</body>
+</html>
